@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <h1>Border Radius Generator</h1>
+        <hr></hr>
+        <div id="box-container">
+            <div id="top">
+                <input type="number" id="top-left" name="top-left" min="0" oninput="ChangeTopLeft()"></input>
+                <input type="number" id="top-right" name="top-right" min="0" oninput="ChangeTopRight()"></input>
+            </div>
+            <div id="box"></div>
+            <div id="bottom">
+                <input type="number" id="bottom-left" name="bottom-left" min="0" oninput="ChangeBottomLeft()"></input>
+                <input type="number" id="bottom-right" name="bottom-right" min="0" oninput="ChangeBottomRight()"></input>
+            </div>
+        </div>
+        <div id="code-box">
+            <p id="css" class="code">border-radius: 
+                <span class="tl">0px</span>
+                <span class="tr">0px</span>
+                <span class="br">0px</span>
+                <span class="bl">0px</span>;
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
